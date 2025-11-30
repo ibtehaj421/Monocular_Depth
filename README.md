@@ -146,16 +146,7 @@ Critical issue resolved: NYU Depth V2 has inconsistent encoding
 - **3D Reconstruction:** Indoor scene mapping
 - **Assistive Technology:** Visual aids for navigation
 
-## 📝 Citation
 
-```bibtex
-@project{haider2024depth,
-  title={Monocular Metric Depth Estimation using ResNet-34 and Curriculum Learning},
-  author={Haider, Ibtehaj},
-  year={2024},
-  institution={FAST NUCES Islamabad}
-}
-```
 
 ## 🙏 Acknowledgments
 
