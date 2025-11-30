@@ -1,0 +1,55 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\@writefile{toc}{\contentsline {title}{Monocular Metric Depth Estimation using ResNet-34 and Curriculum Learning}{1}{chapter.1}\protected@file@percent }
+\@writefile{toc}{\authcount {1}}
+\@writefile{toc}{\contentsline {author}{Ibtehaj Haider (22i-0767)}{1}{chapter.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}{section.1.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.1}Research Gap}{2}{subsection.1.1.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.2}Project Objectives}{2}{subsection.1.1.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.3}Scope and Limitations}{2}{subsection.1.1.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {2}Literature Review}{2}{section.1.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3}Methodology}{3}{section.1.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Overview}{3}{subsection.1.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}System Architecture}{4}{subsection.1.3.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Encoder (Backbone)}{4}{section*.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Decoder}{4}{section*.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Skip Connections}{4}{section*.4}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Proposed U-Net Architecture with ResNet-34 Backbone. The encoder extracts multi-scale features through residual blocks, while the decoder reconstructs spatial resolution via transposed convolutions. Skip connections (gray arrows) preserve fine details.}}{5}{figure.1.1}\protected@file@percent }
+\newlabel{fig:arch}{{1}{5}{Proposed U-Net Architecture with ResNet-34 Backbone. The encoder extracts multi-scale features through residual blocks, while the decoder reconstructs spatial resolution via transposed convolutions. Skip connections (gray arrows) preserve fine details}{figure.1.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Curriculum Learning Strategy}{5}{subsection.1.3.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}Loss Function Design}{5}{subsection.1.3.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.5}Data Preprocessing and Scale Correction}{6}{subsection.1.3.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{The Scale Discrepancy Problem}{6}{section*.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Solution Implementation}{7}{section*.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4}Implementation Details}{7}{section.1.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Hardware and Software Configuration}{7}{subsection.1.4.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Dataset Description}{7}{subsection.1.4.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Training Hyperparameters}{7}{subsection.1.4.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4}Training Algorithm}{7}{subsection.1.4.4}\protected@file@percent }
+\@writefile{loa}{\contentsline {algorithm}{\numberline {1}{\ignorespaces Two-Phase Training with Edge-Aware Loss}}{8}{algorithm.1}\protected@file@percent }
+\newlabel{alg:training}{{1}{8}{Training Algorithm}{algorithm.1}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Experimental Results}{8}{section.1.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Training Convergence Analysis}{8}{subsection.1.5.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Training and validation loss curves across both training phases. The vertical dashed line indicates the transition from Phase One to Phase Two. Note the substantial improvement during fine-tuning and stabilization after Epoch 70.}}{9}{figure.1.2}\protected@file@percent }
+\newlabel{fig:loss}{{2}{9}{Training and validation loss curves across both training phases. The vertical dashed line indicates the transition from Phase One to Phase Two. Note the substantial improvement during fine-tuning and stabilization after Epoch 70}{figure.1.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Quantitative Performance Metrics}{9}{subsection.1.5.2}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Performance Comparison on NYU Depth V2 Test Set}}{9}{table.1.1}\protected@file@percent }
+\newlabel{tab:results}{{1}{9}{Performance Comparison on NYU Depth V2 Test Set}{table.1.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}Qualitative Visual Analysis}{10}{subsection.1.5.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Qualitative results on test set examples. From left to right: Input RGB image, predicted depth map, ground truth depth map, and absolute error map. Blue regions indicate accurate predictions while red regions indicate larger errors (typically occurring at object boundaries and textureless surfaces).}}{10}{figure.1.3}\protected@file@percent }
+\newlabel{fig:qual}{{3}{10}{Qualitative results on test set examples. From left to right: Input RGB image, predicted depth map, ground truth depth map, and absolute error map. Blue regions indicate accurate predictions while red regions indicate larger errors (typically occurring at object boundaries and textureless surfaces)}{figure.1.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Depth reconstruction visualization showing intermediate feature activations. The model learns to detect edges, corners, and planar surfaces as geometric cues for depth inference.}}{11}{figure.1.4}\protected@file@percent }
+\newlabel{fig:edge}{{4}{11}{Depth reconstruction visualization showing intermediate feature activations. The model learns to detect edges, corners, and planar surfaces as geometric cues for depth inference}{figure.1.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.4}Metric Accuracy Analysis}{11}{subsection.1.5.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {6}Discussion}{12}{section.1.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {7}Conclusion}{12}{section.1.7}\protected@file@percent }
+\bibcite{eigen}{1}
+\bibcite{laina}{2}
+\bibcite{nyu}{3}
+\bibcite{monodepth}{4}
+\bibcite{resnet}{5}
+\@writefile{toc}{\contentsline {section}{\numberline {8}Future Work}{13}{section.1.8}\protected@file@percent }
+\bibcite{unet}{6}
+\gdef \@abspage@last{14}

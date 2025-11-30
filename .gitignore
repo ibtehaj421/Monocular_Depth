@@ -1,0 +1,7 @@
+/checkpoints
+/checkpoints_*
+data/
+__pycache__/
+/FinalTrain
+/SecondPass
+nyu.zip
